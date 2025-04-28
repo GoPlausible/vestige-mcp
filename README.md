@@ -1,3 +1,4 @@
+[![smithery badge](https://smithery.ai/badge/@GoPlausible/vestige-mcp)](https://smithery.ai/server/@GoPlausible/vestige-mcp)
 # Vestige MCP
 
 Built by [GoPlausible](https://github.com/GoPlausible)
