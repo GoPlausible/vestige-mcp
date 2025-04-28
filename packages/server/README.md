@@ -1,7 +1,7 @@
 [![smithery badge](https://smithery.ai/badge/@GoPlausible/vestige-mcp)](https://smithery.ai/server/@GoPlausible/vestige-mcp)
 # Vestige MCP Server
 
-Built by [GoPlausible](https://github.com/GoPlausible)
+Built by [GoPlausible](https://github.com/GoPlausible) and distilled from [Algorand MCP](https://github.com/GoPlausible/algorand-mcp).
 
 The server component of [Vestige](https://vestige.fi) MCP, providing a comprehensive interface to the [Vestige](https://vestige.fi) API through the Model Context Protocol (MCP).
 
