@@ -2,7 +2,7 @@
 
 Built by [GoPlausible](https://github.com/GoPlausible)
 
-The server component of Vestige MCP, providing a comprehensive interface to the Vestige API through the Model Context Protocol (MCP).
+The server component of [Vestige](https://vestige.fi) MCP, providing a comprehensive interface to the [Vestige](https://vestige.fi) API through the Model Context Protocol (MCP).
 
 ## Architecture
 
@@ -153,7 +153,6 @@ ITEMS_PER_PAGE=50
 
 # Vestige Configuration
 VESTIGE_API_URL=https://api.vestigelabs.org
-VESTIGE_API_KEY=your-api-key-here
 ```
 
 ## Development
