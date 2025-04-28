@@ -1,0 +1,56 @@
+# Smithery configuration file: https://smithery.ai/docs/config#smitheryyaml
+
+build:
+  dockerBuildPath: ../..
+startCommand:
+  type: stdio
+  configSchema:
+    # JSON Schema defining the configuration options for the MCP.
+    type: object
+    properties:
+      ALGORAND_ALGOD_PORT:
+        type: string
+        default: ""
+        description: Algod node port (optional)
+      ALGORAND_TOKEN:
+        type: string
+        default: ""
+        description: Algorand API token (optional)
+      ITEMS_PER_PAGE:
+        type: string
+        default: 10
+        description: Number of items per page for paginated responses
+      ALGORAND_ALGOD:
+        type: string
+        default: https://mainnet-api.algonode.cloud
+        description: Algod node base URL
+      ALGORAND_NETWORK:
+        type: string
+        default: mainnet
+        description: Algorand network to connect to, e.g., testnet or mainnet
+      ALGORAND_AGENT_WALLET_ACTIVE:
+        type: string
+        default: ""
+        description: Algorand agent active wallet
+  exampleConfig:
+    ALGORAND_ALGOD: https://mainnet-api.algonode.cloud
+    ALGORAND_NETWORK: mainnet
+    ALGORAND_ALGOD_PORT: ""
+    ALGORAND_TOKEN: ""
+    ITEMS_PER_PAGE: 10
+    ALGORAND_AGENT_WALLET_ACTIVE: ""
+  commandFunction:
+    # A JS function that produces the CLI command based on the given config to start the MCP on stdio.
+    |-
+    (config) => ({
+      command: 'node',
+      args: ['packages/server/dist/index.js'],
+      env: {
+        ALGORAND_NETWORK: config.ALGORAND_NETWORK,
+        ALGORAND_ALGOD: config.ALGORAND_ALGOD,
+        ALGORAND_ALGOD_PORT: config.ALGORAND_ALGOD_PORT,
+        ALGORAND_TOKEN: config.ALGORAND_TOKEN,
+        ITEMS_PER_PAGE: config.ITEMS_PER_PAGE,
+        ALGORAND_AGENT_WALLET_ACTIVE: config.ALGORAND_AGENT_WALLET_ACTIVE,
+      }
+    })
