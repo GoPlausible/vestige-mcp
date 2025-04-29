@@ -4,7 +4,7 @@ import { env } from '../../../env.js';
 
 export const networkTools: Tool[] = [
   {
-    name: 'api_vestige_view_networks',
+    name: 'vestige_view_networks',
     description: 'Get all networks',
     inputSchema: {
       type: 'object',
@@ -12,7 +12,7 @@ export const networkTools: Tool[] = [
     }
   },
   {
-    name: 'api_vestige_view_network_by_id',
+    name: 'vestige_view_network_by_id',
     description: 'Get network by id',
     inputSchema: {
       type: 'object',
@@ -33,10 +33,10 @@ export const handleNetworkTools = ResponseProcessor.wrapResourceHandler(async fu
   let endpoint = '';
 
   switch (name) {
-    case 'api_vestige_view_networks':
+    case 'vestige_view_networks':
       endpoint = '/networks';
       break;
-    case 'api_vestige_view_network_by_id':
+    case 'vestige_view_network_by_id':
       endpoint = `/networks/${args.network_id}`;
       break;
     default:

@@ -112,25 +112,25 @@ The `ResponseProcessor` utility (`src/utils/responseProcessor.ts`) handles:
 ## Available Tools
 
 ### Network Tools
-- `api_vestige_view_networks`: Get all networks
-- `api_vestige_view_network_by_id`: Get network by ID
+- `vestige_view_networks`: Get all networks
+- `vestige_view_network_by_id`: Get network by ID
 
 ### Protocol Tools
-- `api_vestige_view_protocols`: Get all protocols
-- `api_vestige_view_protocol_by_id`: Get protocol by ID
-- `api_vestige_view_protocol_volumes`: Get protocol volumes
+- `vestige_view_protocols`: Get all protocols
+- `vestige_view_protocol_by_id`: Get protocol by ID
+- `vestige_view_protocol_volumes`: Get protocol volumes
 
 ### Asset Tools
-- `api_vestige_view_assets`: Get asset data
-- `api_vestige_view_assets_list`: Get paginated asset list
-- `api_vestige_view_assets_search`: Search assets
-- `api_vestige_view_asset_price`: Get asset prices
-- `api_vestige_view_asset_candles`: Get price candles
-- `api_vestige_view_asset_history`: Get historical data
-- `api_vestige_view_asset_composition`: Get asset composition
+- `vestige_view_assets`: Get asset data
+- `vestige_view_assets_list`: Get paginated asset list
+- `vestige_view_assets_search`: Search assets
+- `vestige_view_asset_price`: Get asset prices
+- `vestige_view_asset_candles`: Get price candles
+- `vestige_view_asset_history`: Get historical data
+- `vestige_view_asset_composition`: Get asset composition
 
 ### Pool Tools
-- `api_vestige_view_pools`: Get pool information
+- `vestige_view_pools`: Get pool information
 - Supports filtering by:
   - Protocol ID
   - Asset pairs
@@ -138,7 +138,7 @@ The `ResponseProcessor` utility (`src/utils/responseProcessor.ts`) handles:
   - Volume metrics
 
 ### Trading Tools
-- `api_vestige_view_swaps`: Get swap transactions
+- `vestige_view_swaps`: Get swap transactions
   - Time range filtering
   - Protocol filtering
   - Asset filtering
@@ -146,26 +146,26 @@ The `ResponseProcessor` utility (`src/utils/responseProcessor.ts`) handles:
   - Executor filtering
   - Denominating asset configuration
 
-- `api_vestige_get_best_v4_swap_data`: Get optimal swap routing
+- `vestige_get_best_v4_swap_data`: Get optimal swap routing
   - Source/target asset selection
   - Amount specification
   - Swap mode configuration (sef/sfe)
   - Provider filtering options
 
-- `api_vestige_get_v4_swap_discount`: Get swap fee discounts
+- `vestige_get_v4_swap_discount`: Get swap fee discounts
   - Account-based discount information
 
-- `api_vestige_get_v4_swap_data_transactions`: Get swap transaction data
+- `vestige_get_v4_swap_data_transactions`: Get swap transaction data
   - Slippage tolerance configuration
   - Random signer support
   - Transaction building
 
-- `api_vestige_get_aggregator_stats`: Get aggregator statistics
+- `vestige_get_aggregator_stats`: Get aggregator statistics
   - Denominating asset configuration
   - Overall performance metrics
 
 ### Balance Tools
-- `api_vestige_view_balances`: Get account balances
+- `vestige_view_balances`: Get account balances
 - Filtering by:
   - Network ID
   - Protocol ID
@@ -173,9 +173,9 @@ The `ResponseProcessor` utility (`src/utils/responseProcessor.ts`) handles:
   - Address
 
 ### Note Tools
-- `api_vestige_view_notes`: Get market notes with filtering options
-- `api_vestige_view_first_asset_notes`: Get first note for specific assets
-- `api_vestige_view_asset_notes_count`: Get note count for assets
+- `vestige_view_notes`: Get market notes with filtering options
+- `vestige_view_first_asset_notes`: Get first note for specific assets
+- `vestige_view_asset_notes_count`: Get note count for assets
 - Supports:
   - Network filtering
   - Asset filtering
@@ -183,7 +183,7 @@ The `ResponseProcessor` utility (`src/utils/responseProcessor.ts`) handles:
   - Custom ordering
 
 ### Vault Tools
-- `api_vestige_view_vaults`: Get protocol vault information
+- `vestige_view_vaults`: Get protocol vault information
 - Filtering options:
   - Network ID
   - Protocol ID

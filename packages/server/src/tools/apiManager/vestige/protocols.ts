@@ -4,7 +4,7 @@ import { env } from '../../../env.js';
 
 export const protocolTools: Tool[] = [
   {
-    name: 'api_vestige_view_protocols',
+    name: 'vestige_view_protocols',
     description: 'Get all protocols',
     inputSchema: {
       type: 'object',
@@ -18,7 +18,7 @@ export const protocolTools: Tool[] = [
     }
   },
   {
-    name: 'api_vestige_view_protocol_by_id',
+    name: 'vestige_view_protocol_by_id',
     description: 'Get protocol by id',
     inputSchema: {
       type: 'object',
@@ -36,7 +36,7 @@ export const protocolTools: Tool[] = [
     }
   },
   {
-    name: 'api_vestige_view_protocol_volumes',
+    name: 'vestige_view_protocol_volumes',
     description: 'Get protocol volumes at specific day. Defaults to current day.',
     inputSchema: {
       type: 'object',
@@ -66,13 +66,13 @@ export const handleProtocolTools = ResponseProcessor.wrapResourceHandler(async f
   let endpoint = '';
 
   switch (name) {
-    case 'api_vestige_view_protocols':
+    case 'vestige_view_protocols':
       endpoint = '/protocols';
       break;
-    case 'api_vestige_view_protocol_by_id':
+    case 'vestige_view_protocol_by_id':
       endpoint = `/protocols/${args.protocol_id}`;
       break;
-    case 'api_vestige_view_protocol_volumes':
+    case 'vestige_view_protocol_volumes':
       endpoint = '/protocols/volume';
       break;
     default:

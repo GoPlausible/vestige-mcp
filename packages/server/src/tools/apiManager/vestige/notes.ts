@@ -4,7 +4,7 @@ import { env } from '../../../env.js';
 
 export const noteTools: Tool[] = [
   {
-    name: 'api_vestige_view_notes',
+    name: 'vestige_view_notes',
     description: 'Get notes by network id and optionally asset id',
     inputSchema: {
       type: 'object',
@@ -45,7 +45,7 @@ export const noteTools: Tool[] = [
     }
   },
   {
-    name: 'api_vestige_view_first_asset_notes',
+    name: 'vestige_view_first_asset_notes',
     description: 'Get first note for assets',
     inputSchema: {
       type: 'object',
@@ -63,7 +63,7 @@ export const noteTools: Tool[] = [
     }
   },
   {
-    name: 'api_vestige_view_asset_notes_count',
+    name: 'vestige_view_asset_notes_count',
     description: 'Get notes count for assets',
     inputSchema: {
       type: 'object',
@@ -88,13 +88,13 @@ export const handleNoteTools = ResponseProcessor.wrapResourceHandler(async funct
   let endpoint = '';
 
   switch (name) {
-    case 'api_vestige_view_notes':
+    case 'vestige_view_notes':
       endpoint = '/notes';
       break;
-    case 'api_vestige_view_first_asset_notes':
+    case 'vestige_view_first_asset_notes':
       endpoint = '/notes/first';
       break;
-    case 'api_vestige_view_asset_notes_count':
+    case 'vestige_view_asset_notes_count':
       endpoint = '/notes/count';
       break;
     default:

@@ -96,7 +96,7 @@ class AlgorandMcpServer {
     this.server.setRequestHandler(CallToolRequestSchema, async (request) => {
       const { name, arguments: args = {} } = request.params;
       // Handle API tools
-      if (name.startsWith('api_')) {
+      if (name.startsWith('vestige_')) {
         return handleApiManager(name, args);
       }
       throw new McpError(ErrorCode.MethodNotFound, `Unknown tool: ${name}`);

@@ -25,29 +25,29 @@ export async function handleVestigeTools(name: string, args: any): Promise<any> 
   try {
     const combinedArgs = { name, ...args };
     // Network tools
-    if (name.startsWith('api_vestige_view_network')) {
+    if (name.startsWith('vestige_view_network')) {
       return handleNetworkTools(combinedArgs);
     }
 
     // Protocol tools
-    if (name.startsWith('api_vestige_view_protocol')) {
+    if (name.startsWith('vestige_view_protocol')) {
       return handleProtocolTools(combinedArgs);
     }
 
     
 
     // Pool tools
-    if (name.startsWith('api_vestige_view_pool')) {
+    if (name.startsWith('vestige_view_pool')) {
       return handlePoolTools(combinedArgs);
     }
 
     // Vault tools
-    if (name.startsWith('api_vestige_view_vault')) {
+    if (name.startsWith('vestige_view_vault')) {
       return handleVaultTools(combinedArgs);
     }
 
     // Balance tools
-    if (name.startsWith('api_vestige_view_balance')) {
+    if (name.startsWith('vestige_view_balance')) {
       return handleBalanceTools(combinedArgs);
     }
     
@@ -56,12 +56,12 @@ export async function handleVestigeTools(name: string, args: any): Promise<any> 
       return handleNoteTools(combinedArgs);
     }
     // Asset tools
-    if (name.startsWith('api_vestige_view_asset')) {
+    if (name.startsWith('vestige_view_asset')) {
       return handleAssetTools(combinedArgs);
     }
 
     // Swap tools
-    if (name.startsWith('api_vestige_') &&
+    if (name.startsWith('vestige_') &&
       (name.includes('_swap') || name.includes('_swaps') || name.includes('get_aggregator_stats'))) {
       return handleSwapTools(combinedArgs);
     }

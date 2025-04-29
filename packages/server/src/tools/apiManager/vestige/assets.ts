@@ -5,7 +5,7 @@ import { env } from '../../../env.js';
 export const assetTools: Tool[] = [
   // Asset List and Search
   {
-    name: 'api_vestige_view_assets',
+    name: 'vestige_view_assets',
     description: 'Get data about assets',
     inputSchema: {
       type: 'object',
@@ -23,7 +23,7 @@ export const assetTools: Tool[] = [
     }
   },
   {
-    name: 'api_vestige_view_assets_list',
+    name: 'vestige_view_assets_list',
     description: 'Get asset list',
     inputSchema: {
       type: 'object',
@@ -117,7 +117,7 @@ export const assetTools: Tool[] = [
     }
   },
   {
-    name: 'api_vestige_view_assets_search',
+    name: 'vestige_view_assets_search',
     description: 'Search assets by query',
     inputSchema: {
       type: 'object',
@@ -169,7 +169,7 @@ export const assetTools: Tool[] = [
 
   // Asset Details and Price
   {
-    name: 'api_vestige_view_asset_price',
+    name: 'vestige_view_asset_price',
     description: 'Get asset prices',
     inputSchema: {
       type: 'object',
@@ -194,7 +194,7 @@ export const assetTools: Tool[] = [
 
   // Asset History and Candles
   {
-    name: 'api_vestige_view_asset_candles',
+    name: 'vestige_view_asset_candles',
     description: 'Get asset candles',
     inputSchema: {
       type: 'object',
@@ -234,7 +234,7 @@ export const assetTools: Tool[] = [
     }
   },
   {
-    name: 'api_vestige_view_asset_history',
+    name: 'vestige_view_asset_history',
     description: 'Get asset volume, swaps, total lockup, vwap and confidence history',
     inputSchema: {
       type: 'object',
@@ -276,7 +276,7 @@ export const assetTools: Tool[] = [
 
   // Asset Composition
   {
-    name: 'api_vestige_view_asset_composition',
+    name: 'vestige_view_asset_composition',
     description: 'Get asset lockups based on protocol and pair',
     inputSchema: {
       type: 'object',
@@ -303,25 +303,25 @@ export const handleAssetTools = ResponseProcessor.wrapResourceHandler(async func
   let endpoint = '';
 
   switch (name) {
-    case 'api_vestige_view_assets':
+    case 'vestige_view_assets':
       endpoint = '/assets';
       break;
-    case 'api_vestige_view_assets_list':
+    case 'vestige_view_assets_list':
       endpoint = '/assets/list';
       break;
-    case 'api_vestige_view_assets_search':
+    case 'vestige_view_assets_search':
       endpoint = '/assets/search';
       break;
-    case 'api_vestige_view_asset_price':
+    case 'vestige_view_asset_price':
       endpoint = '/assets/price';
       break;
-    case 'api_vestige_view_asset_candles':
+    case 'vestige_view_asset_candles':
       endpoint = `/assets/${args.asset_id}/candles`;
       break;
-    case 'api_vestige_view_asset_history':
+    case 'vestige_view_asset_history':
       endpoint = `/assets/${args.asset_id}/history`;
       break;
-    case 'api_vestige_view_asset_composition':
+    case 'vestige_view_asset_composition':
       endpoint = `/assets/${args.asset_id}/composition`;
       break;
     default:

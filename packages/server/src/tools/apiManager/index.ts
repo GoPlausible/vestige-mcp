@@ -14,7 +14,7 @@ export async function handleApiManager(name: string, args: any): Promise<any> {
     let response;
 
     // Vestige tools
-    if (name.startsWith('api_vestige_')) {
+    if (name.startsWith('vestige_')) {
       response = await handleVestigeTools(name, args);
     } else {
       throw new McpError(

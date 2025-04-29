@@ -4,7 +4,7 @@ import { env } from '../../../env.js';
 
 export const swapTools: Tool[] = [
   {
-    name: 'api_vestige_view_swaps',
+    name: 'vestige_view_swaps',
     description: 'Get swaps',
     inputSchema: {
       type: 'object',
@@ -64,7 +64,7 @@ export const swapTools: Tool[] = [
     }
   },
   {
-    name: 'api_vestige_get_best_v4_swap_data',
+    name: 'vestige_get_best_v4_swap_data',
     description: 'Get best V4 swap data',
     inputSchema: {
       type: 'object',
@@ -104,7 +104,7 @@ export const swapTools: Tool[] = [
     }
   },
   {
-    name: 'api_vestige_get_v4_swap_discount',
+    name: 'vestige_get_v4_swap_discount',
     description: 'Get V4 swap discount',
     inputSchema: {
       type: 'object',
@@ -118,7 +118,7 @@ export const swapTools: Tool[] = [
     }
   },
   {
-    name: 'api_vestige_get_v4_swap_data_transactions',
+    name: 'vestige_get_v4_swap_data_transactions',
     description: 'Get V4 swap data transactions',
     inputSchema: {
       type: 'object',
@@ -144,7 +144,7 @@ export const swapTools: Tool[] = [
     }
   },
   {
-    name: 'api_vestige_get_aggregator_stats',
+    name: 'vestige_get_aggregator_stats',
     description: 'Get aggregator stats',
     inputSchema: {
       type: 'object',
@@ -166,20 +166,20 @@ export const handleSwapTools = ResponseProcessor.wrapResourceHandler(async funct
   let method = 'GET';
 
   switch (name) {
-    case 'api_vestige_view_swaps':
+    case 'vestige_view_swaps':
       endpoint = '/swaps';
       break;
-    case 'api_vestige_get_best_v4_swap_data':
+    case 'vestige_get_best_v4_swap_data':
       endpoint = '/swap/v4';
       break;
-    case 'api_vestige_get_v4_swap_discount':
+    case 'vestige_get_v4_swap_discount':
       endpoint = '/swap/v4/fee';
       break;
-    case 'api_vestige_get_v4_swap_data_transactions':
+    case 'vestige_get_v4_swap_data_transactions':
       endpoint = '/swap/v4/transactions';
       method = 'POST';
       break;
-    case 'api_vestige_get_aggregator_stats':
+    case 'vestige_get_aggregator_stats':
       endpoint = '/swap/v4/stats';
       break;
     default:

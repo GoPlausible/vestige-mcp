@@ -4,7 +4,7 @@ import { env } from '../../../env.js';
 
 export const balanceTools: Tool[] = [
   {
-    name: 'api_vestige_view_balances',
+    name: 'vestige_view_balances',
     description: 'Get balances by network id, protocol id and asset id',
     inputSchema: {
       type: 'object',
@@ -60,7 +60,7 @@ export const handleBalanceTools = ResponseProcessor.wrapResourceHandler(async fu
   let endpoint = '';
 
   switch (name) {
-    case 'api_vestige_view_balances':
+    case 'vestige_view_balances':
       endpoint = '/balances';
       break;
     default:

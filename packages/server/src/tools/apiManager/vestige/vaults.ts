@@ -4,7 +4,7 @@ import { env } from '../../../env.js';
 
 export const vaultTools: Tool[] = [
   {
-    name: 'api_vestige_view_vaults',
+    name: 'vestige_view_vaults',
     description: 'Get all vaults',
     inputSchema: {
       type: 'object',
@@ -62,7 +62,7 @@ export const handleVaultTools = ResponseProcessor.wrapResourceHandler(async func
   let endpoint = '';
 
   switch (name) {
-    case 'api_vestige_view_vaults':
+    case 'vestige_view_vaults':
       endpoint = '/vaults';
       break;
     default:

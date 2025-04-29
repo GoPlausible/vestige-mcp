@@ -4,7 +4,7 @@ import { env } from '../../../env.js';
 
 export const poolTools: Tool[] = [
   {
-    name: 'api_vestige_view_pools',
+    name: 'vestige_view_pools',
     description: 'Get pools',
     inputSchema: {
       type: 'object',
@@ -66,7 +66,7 @@ export const handlePoolTools = ResponseProcessor.wrapResourceHandler(async funct
   let endpoint = '';
 
   switch (name) {
-    case 'api_vestige_view_pools':
+    case 'vestige_view_pools':
       endpoint = '/pools';
       break;
     default:
