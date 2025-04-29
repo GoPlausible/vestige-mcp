@@ -147,32 +147,6 @@ vestige-mcp/
 - Volume and TVL tracking
 - Historical pool data
 
-## Setup
-
-1. Clone the repository:
-```bash
-git clone https://github.com/your-org/vestige-mcp.git
-cd vestige-mcp
-```
-
-2. Install dependencies:
-```bash
-npm install
-```
-
-3. Configure environment variables:
-```bash
-# Copy example env files
-cp packages/server/.env.example packages/server/.env
-cp packages/client/.env.example packages/client/.env
-
-# Edit the .env files with your configuration
-```
-
- Environment variables:
-- `VESTIGE_API_URL`: Vestige API endpoint (defaults to https://api.vestigelabs.org)
-- `ALGORAND_*`: Algorand API configuration (defaults to MAINNET)
-
 ## Usage
 
 ### Starting the Server
