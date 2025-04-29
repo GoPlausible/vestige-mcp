@@ -147,7 +147,7 @@ vestige-mcp/
 - Volume and TVL tracking
 - Historical pool data
 
-## Usage
+## Development
 
 ### Starting the Server
 
