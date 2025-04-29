@@ -48,9 +48,9 @@ And you are done! Now you can open you MCP config and add the server as :
         "PATH_ON_YOUR_MACHINE/Claude/mcp-servers/vestige-mcp/packages/server/dist/index.js"
      ],
       "env": {
-        "ALGORAND_NETWORK": "testnet",
-        "ALGORAND_ALGOD_API": "https://testnet-api.algonode.cloud/v2",
-        "ALGORAND_ALGOD": "https://testnet-api.algonode.cloud",
+        "ALGORAND_NETWORK": "mainnet",
+        "ALGORAND_ALGOD_API": "https://mainnet-api.algonode.cloud/v2",
+        "ALGORAND_ALGOD": "https://mainnet-api.algonode.cloud",
         "ALGORAND_ALGOD_PORT": "",
         "ALGORAND_TOKEN": "",
         "ALGORAND_AGENT_WALLET_ACTIVE": "problem aim online jaguar upper oil flight stumble mystery aerobic toy avoid file tomato moment exclude witness guard lab opera crunch noodle dune abandon broccoli",
