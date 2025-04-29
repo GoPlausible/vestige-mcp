@@ -258,7 +258,7 @@ npm start
 Example:
 ```typescript
 export const newTools: Tool[] = [{
-  name: 'api_vestige_new_tool',
+  name: 'vestige_new_tool',
   description: 'Description of new tool',
   inputSchema: {
     type: 'object',
