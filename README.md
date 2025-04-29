@@ -17,6 +17,81 @@ Vestige MCP serves as a bridge between MCP-enabled applications and the Vestige 
 - Transaction monitoring
 - Market notes and annotations
 
+## Installation
+
+To install or update the Algorand MCP implementation, clone the repository, install the dependencies and build the project":
+
+First check node version to be 23.6.1 or later:
+```bash
+node -v
+```
+
+Upgrade to 23.6.1 or later if needed!
+
+Then check the Claude or Cursor container folders to have mcp-servers folder (if not create one):
+```bash
+mkdir PATH_ON_YOUR_MACHINE/Claude/mcp-servers
+# or for Cursor 
+mkdir PATH_ON_YOUR_MACHINE/Cursor/mcp-servers
+```
+Then clone this repository under mcp-servers folder and install dependencies:
+
+```bash
+cd PATH_ON_YOUR_MACHINE/Claude/mcp-servers
+# or for Cursor 
+cd PATH_ON_YOUR_MACHINE/Cursor/mcp-servers
+# Clone the repository
+git clone https://github.com/GoPlausible/vestige-mcp.git
+cd vestige-mcp
+# Install dependencies
+npm install
+# Build the project
+npm run build
+# Edit the .env file to set your configurations
+```
+And you are done! Now you can open you MCP config and add the server as :
+
+```json
+{
+  "mcpServers": {
+    "vestige-mcp": {
+      "command": "node",
+      "args": [
+        "PATH_ON_YOUR_MACHINE/Claude/mcp-servers/vestige-mcp/packages/server/dist/index.js"
+     ],
+      "env": {
+        "ALGORAND_NETWORK": "testnet",
+        "ALGORAND_ALGOD_API": "https://testnet-api.algonode.cloud/v2",
+        "ALGORAND_ALGOD": "https://testnet-api.algonode.cloud",
+        "ALGORAND_ALGOD_PORT": "",
+        "ALGORAND_TOKEN": "",
+        "ALGORAND_AGENT_WALLET_ACTIVE": "problem aim online jaguar upper oil flight stumble mystery aerobic toy avoid file tomato moment exclude witness guard lab opera crunch noodle dune abandon broccoli",
+        "VESTIGE_API_URL": "https://api.vestigelabs.org",
+        "VESTIGE_API_KEY": "",
+        "ITEMS_PER_PAGE": "10"
+
+      }
+    }
+  }
+}
+```
+Make sure yopu change the paths to match your local system's paths.
+
+For example on MACOS and Claud, the path would be something like this:
+
+```json
+{
+  "mcpServers": {
+    "vestige-mcp": {
+      "command": "node",
+      "args": [
+        " /Users/YOUR_USERNAME/Library/Application\ Support/Claude/mcp-servers/vestige-mcp/packages/server/dist/index.js"
+     ]
+    }
+  }
+}
+```
+
 ## Project Structure
 
 ```
