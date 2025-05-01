@@ -28,7 +28,7 @@ startCommand:
         type: string
         default: mainnet
         description: Algorand network to connect to, e.g., testnet or mainnet
-      ALGORAND_AGENT_WALLET_ACTIVE:
+      ALGORAND_AGENT_WALLET:
         type: string
         default: ""
         description: Algorand agent active wallet
@@ -38,7 +38,7 @@ startCommand:
     ALGORAND_ALGOD_PORT: ""
     ALGORAND_TOKEN: ""
     ITEMS_PER_PAGE: 10
-    ALGORAND_AGENT_WALLET_ACTIVE: ""
+    ALGORAND_AGENT_WALLET: ""
   commandFunction:
     # A JS function that produces the CLI command based on the given config to start the MCP on stdio.
     |-
@@ -51,6 +51,6 @@ startCommand:
         ALGORAND_ALGOD_PORT: config.ALGORAND_ALGOD_PORT,
         ALGORAND_TOKEN: config.ALGORAND_TOKEN,
         ITEMS_PER_PAGE: config.ITEMS_PER_PAGE,
-        ALGORAND_AGENT_WALLET_ACTIVE: config.ALGORAND_AGENT_WALLET_ACTIVE,
+        ALGORAND_AGENT_WALLET: config.ALGORAND_AGENT_WALLET,
       }
     })

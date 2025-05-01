@@ -65,7 +65,7 @@ And you are done! Now you can open you MCP config and add the server as :
         "ALGORAND_ALGOD": "https://mainnet-api.algonode.cloud",
         "ALGORAND_ALGOD_PORT": "",
         "ALGORAND_TOKEN": "",
-        "ALGORAND_AGENT_WALLET_ACTIVE": "problem aim online jaguar upper oil flight stumble mystery aerobic toy avoid file tomato moment exclude witness guard lab opera crunch noodle dune abandon broccoli",
+        "ALGORAND_AGENT_WALLET": "problem aim online jaguar upper oil flight stumble mystery aerobic toy avoid file tomato moment exclude witness guard lab opera crunch noodle dune abandon broccoli",
         "VESTIGE_API_URL": "https://api.vestigelabs.org",
         "VESTIGE_API_KEY": "",
         "ITEMS_PER_PAGE": "10"

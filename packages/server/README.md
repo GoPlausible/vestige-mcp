@@ -53,7 +53,7 @@ And you are done! Now you can open you MCP config and add the server as :
         "ALGORAND_ALGOD": "https://mainnet-api.algonode.cloud",
         "ALGORAND_ALGOD_PORT": "",
         "ALGORAND_TOKEN": "",
-        "ALGORAND_AGENT_WALLET_ACTIVE": "problem aim online jaguar upper oil flight stumble mystery aerobic toy avoid file tomato moment exclude witness guard lab opera crunch noodle dune abandon broccoli",
+        "ALGORAND_AGENT_WALLET": "problem aim online jaguar upper oil flight stumble mystery aerobic toy avoid file tomato moment exclude witness guard lab opera crunch noodle dune abandon broccoli",
         "VESTIGE_API_URL": "https://api.vestigelabs.org",
         "VESTIGE_API_KEY": "",
         "ITEMS_PER_PAGE": "10"
@@ -203,7 +203,7 @@ interface EnvConfig {
   algorand_algod: string;
   algorand_algod_port: string;
   algorand_token: string;
-  algorand_agent_wallet_active: string;
+  algorand_agent_wallet: string;
   
   // Pagination Configuration
   items_per_page: number;
@@ -222,7 +222,7 @@ ALGORAND_NETWORK=mainnet
 ALGORAND_ALGOD=http://localhost
 ALGORAND_ALGOD_PORT=4001
 ALGORAND_TOKEN=your-token-here
-ALGORAND_AGENT_WALLET_ACTIVE=true
+ALGORAND_AGENT_WALLET=wallet mnemonic
 
 # Pagination Configuration
 ITEMS_PER_PAGE=50
