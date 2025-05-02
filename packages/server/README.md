@@ -214,22 +214,6 @@ interface EnvConfig {
 }
 ```
 
-### Example .env file
-
-```bash
-# Algorand Configuration
-ALGORAND_NETWORK=mainnet
-ALGORAND_ALGOD=http://localhost
-ALGORAND_ALGOD_PORT=4001
-ALGORAND_TOKEN=your-token-here
-ALGORAND_AGENT_WALLET=wallet mnemonic
-
-# Pagination Configuration
-ITEMS_PER_PAGE=50
-
-# Vestige Configuration
-VESTIGE_API_URL=https://api.vestigelabs.org
-```
 
 ## Development
 
